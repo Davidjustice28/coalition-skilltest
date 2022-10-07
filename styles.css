@@ -1,0 +1,71 @@
+
+html, body {
+    width: 100vw;
+    margin: 0;
+    height: 100vh;
+}
+
+#hero, #climb-section {
+    width: 100vw;
+    height: 100vh;
+}
+
+#hero {
+    border: 2px solid transparent
+}
+
+
+#history-section {
+    background-image: url("./images/Bg.png");
+    background-position:bottom;
+    width: 100vw;
+    height: 125vh;
+    background-size: cover;
+
+}
+
+
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50%;
+    margin-top: 10px;
+    overflow: hidden;
+}
+
+#nav-menu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    justify-content: space-evenly;
+    gap: 25px;
+}
+
+#nav-menu li {
+    text-decoration: underline;
+    color: white;
+    font-weight: bold;
+}
+
+#carousel img {
+    width: 25%;
+}
+
+table td {
+    font-size: larger;
+}
+
+td, th {
+    text-align: left;
+}
+
+table tbody {
+    border: 1px solid red;
+}
+
+li, p {
+    font-family: Lato;
+}
+
