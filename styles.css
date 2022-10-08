@@ -53,19 +53,191 @@ nav {
     width: 25%;
 }
 
-table td {
-    font-size: larger;
+table {
+    background-color:white;
+    opacity: .8; 
+    text-align: center; 
+    padding-left:25px ;
+    padding-right: 25px; 
+    padding-top: 10px; 
+    padding-bottom: 10px;
 }
+
+@media (min-width: 500px) {
+   table {
+        width: 400px; 
+        height: 40%;
+        position: relative; 
+        left: 15vw; 
+        top: 10vh; 
+   } 
+
+   table td {
+        font-size: larger;
+   }
+}
+
 
 td, th {
     text-align: left;
-}
-
-table tbody {
-    border: 1px solid red;
 }
 
 li, p {
     font-family: Lato;
 }
 
+@media (max-width:500px) {
+    nav {
+        flex-direction: column;
+    }
+    #nav-menu {
+        
+        font-size: small !important;
+        margin-left: -60px;
+
+    }
+
+    #hero h1 {
+        position: relative;
+        top: 18%;
+        width: 50%;
+        height: 50vw;
+        padding-top: 4vw;
+    }
+   #sticky-ul  {
+        margin-left: -10%;
+        font-size: 10px !important;
+        
+    }
+
+    #sticky-logo {
+        display: none !important;
+    }
+
+    #history-section p {
+        font-size: smaller;
+        font-weight: bold;
+    }
+
+    #history-header {
+        position: relative;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: -50px
+    }
+
+    #history-header h1 {
+        font-size: 20vw !important;
+    }
+
+    #history-headerdiv {
+        margin-top: -120px;
+        text-decoration: underline;
+    }
+    
+    #history-headerdiv div {
+        display: none;
+    }
+
+    #carousel img:nth-child(3), #carousel img:nth-child(4){
+        border: 2px solid red;
+        display: none;
+    }
+
+    #carousel img {
+        width: 70%;
+    }
+
+    #climbtop-div {
+        flex-direction: column;
+    }
+
+    #climbtop-div p {
+        font-size: small !important;
+        text-align: center;
+        padding: 10px;
+    }
+
+    #climb-headerdiv {
+        flex-direction: column;
+        margin-top: -50px;
+        margin-bottom: 20px;
+    }
+
+    #climb-headerdiv h1 {
+        font-size: 7vh !important;
+        margin-bottom: -40px;
+    }
+    
+    
+
+    #climb-subdiv h2{
+        font-size: 2vh !important; 
+    }
+    #climb-subdiv div {
+        display: none;
+    }
+
+    #mountain-tabs {
+        justify-content: center !important;
+
+    }
+
+    #mountain-tabs button {
+        width: 50vw !important;
+    }
+   
+    #mountain-tabs button:nth-child(1) {
+        margin-left: 0% !important;
+    }
+
+    #climb-bottomdiv {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    table {
+        width: 70%;
+        height: 30%;
+    }
+
+    table td {
+        font-size: small;
+        font-weight: bolder;
+    }
+
+   #footer-text {
+
+        font-size: smaller !important;
+        margin-bottom: 20px;
+        margin-top: -10px;
+    }
+
+    .logo-toptext {
+        font-size: 4.8vw !important;
+
+    }
+
+    .logo-bottomtext {
+        font-size: 5vw !important;
+    }
+
+    footer {
+        flex-direction: column;
+        gap: 0% !important;
+    }
+
+    footer h1 {
+        display: flex;
+        gap: 2px;
+    }
+
+    footer img {
+        display: none;
+    }
+
+    footer .logo-toptext {
+        font-size: 5vw !important;
+    }
+}

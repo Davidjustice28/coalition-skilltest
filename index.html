@@ -20,31 +20,31 @@
         </nav>
         <img id="hero-image" style="position: absolute; top:0; z-index: -1; width: 100vw; height: 100vh; object-fit: cover; object-position: top; " src="./images/hero-image.png">
         <img style="position: absolute; top:0; width:100vw; height: 100vh; opacity: .2;" src="./images/Layer-627-na.png">
-        <h1 style="margin-left: auto; margin-right: auto; width: 35%; margin-top: 8%; position: relative; z-index: -1;">
-            <span style="color:darkgray;font-size: 3em; ">LOSANGELES</span>
+        <h1 style="margin-left: auto; margin-right: auto; margin-top: 8%; position: relative; z-index: -1; text-align: center;">
+            <span style="color:darkgray;font-size: 7.5vw; ">LOSANGELES</span>
             <br>
-            <span style="color:#414f6b;font-size: 3.15em;; position: relative;bottom:5vh;">MOUNTAINS</span>    
+            <span style="color:#414f6b;font-size: 8vw;; position: relative;bottom:4vw;">MOUNTAINS</span>    
         </h1>
         
     </div>
     <div id="sticky-nav" style="height: 10vh;position: relative; width: 100vw; display: flex; justify-content: center;gap: 50%; align-items: center; font-size: small;">
-        <div style="display: flex; justify-content:center; align-items:center; gap:10px; height: 70%;">
+        <div id="sticky-logo" style="display: flex; justify-content:center; align-items:center; gap:10px; height: 70%;">
             <img src="./images/Logo.png" height="100%" >
             <h1>
-                <span style="color:darkgray; font-size: .95em;">LOSANGELES</span>
+                <span class="logo-toptext" style="color:darkgray; font-size: .95em;">LOSANGELES</span>
                 <br>
-                <span style="color:#414f6b;">MOUNTAINS</span>
+                <span class="logo-bottomtext" style="color:#414f6b;">MOUNTAINS</span>
             </h1>
         </div>
-        <ul style=" display:flex; justify-content: center; gap: 25px;opacity: 0.8;">
+        <ul id="sticky-ul"style=" display:flex; justify-content: center; gap: 25px;opacity: 0.8;">
             <li style="list-style: none; text-decoration:underline; font-weight: bold; font-size: larger;"><i>01. HISTORY</i></li>
             <li style="list-style: none; text-decoration:underline; font-weight: bold; font-size: larger;"><i>02. TEAM</i></li>
         </ul>
     </div>
     <div id="history-section" style="display:flex; flex-direction:column; justify-content: end; position: relative;" >
-        <div style="position:absolute; display:flex; align-items: center; width: 225px; height:100px; top:7vh; left: 20vw;">
+        <div id="history-header" style="position:absolute; display:flex; align-items: center; width: 225px; height:100px; top:7vh; left: 20vw;">
             <h1 style="font-size: 8em; color: gray;">01</h1>
-            <div style="display:flex; flex-direction: column; position: relative; top: 40px;">
+            <div id= "history-headerdiv"style="display:flex; flex-direction: column; position: relative; top: 40px;">
                 <h2 style="opacity: .7; margin-bottom: -5%;">HISTORY</h2>
                 <div style="width: 20px; height:20px; background-color:gray;"></div>
             </div>
@@ -64,25 +64,25 @@
         </div>
     </div>
     <div id="climb-section" style="width: 100vw; height:90vh;">
-        <div style="width:100vw; height:25vh; display: flex; align-items: center; justify-content: center; gap: 50px;">
-            <div style="display:flex; align-items: center; width: 225px; height:100px; margin-right: 3em;">
-                <h1 style="font-size: 10em; color: gray;">02</h1>
-                <div style="display:flex; flex-direction: column; justify-content: flex-end; position: relative; top:50px">
-                    <h2 style="opacity: .7;margin-bottom: -5%;">CLIMB</h2>
-                    <div style="width: 20px; height:20px; background-color:gray;"></div>
+        <div id= "climbtop-div" style="width:100vw; height:25vh; display: flex; align-items: center; justify-content: center; gap: 2vw;">
+            <div id="climb-headerdiv" style="display:flex; align-items: center; width: 225px; height:100px; margin-right: 3vw;">
+                <h1 style="font-size: 18vh; color: gray;">02</h1>
+                <div id="climb-subdiv" style="display:flex; flex-direction: column; justify-content: flex-end; position: relative; top:15px">
+                    <h2 style="font-size:5vh; opacity: .7;margin-bottom: -5%;">CLIMB</h2>
+                    <div style="width: 2vh; height:2vh; background-color:gray;"></div>
                 </div>
             </div>
-            <p style="font-family: Lato;">Cras scelerisque id quam sed dignissim Pellentesque urna nunc, gravida quis hendrerit
-                <br>
+            <p style="font-family: Lato; font-size:3vh">Cras scelerisque id quam sed dignissim Pellentesque urna nunc, gravida quis hendrerit
+                
                  ac, tristique ut quam. Vivamus suscipit dignissim tortor nec congue. 
             </p>
         </div>
         <div id="mountain-tabs" style="height: 4vh; background-color: #414f6b; display: flex; align-items: center; justify-content: flex-start;" >
-            <button style=" margin-left:10%; text-decoration: underline; height:100%; width: 10%; font-weight:bold; background-color:  gray; color: #414f6b; font-size: large;">MOUNTAIN 1</button>
+            <button style=" margin-left:10%; text-decoration: underline; height:100%; width: 10%; font-weight:bold; background-color:  gray; color: #414f6b; font-size: large;">MOUNTAIN1</button>
             <button style="height:100%;width:10%;background-color: transparent; color: gray; font-size: large; font-weight: bold;">MOUNTAIN2</button>
         </div>
-        <div style="width: 100vw; height:61vh; background-image: url('./images/bird-mountain.png'); background-position:bottom; background-size:cover;">
-            <table style="background-color:white; opacity: .8; width: 400px; height: 40%; text-align: center; position: relative; left: 15vw; top: 10vh; padding-left:25px ;padding-right: 25px; padding-top: 10px; padding-bottom: 10px;">
+        <div id ="climb-bottomdiv" style="width: 100vw; height:61vh; background-image: url('./images/bird-mountain.png'); background-position:bottom; background-size:cover;">
+            <table>
                 <tr>
                     <th style="font-size: 2em;" colspan="2">SCHEDULE</th>
                 </tr>
@@ -109,12 +109,12 @@
         <div style="display: flex; justify-content:center; align-items:center; gap:10px; height: 70%;">
             <img src="./images/Logo.png" style="opacity: .4;" height="100%" >
             <h1>
-                <span style="color:white; font-size: .95em; opacity: .3;">LOSANGELES</span>
+                <span class="logo-toptext" style="color:white; font-size: .95em; opacity: .3;">LOSANGELES</span>
                 <br>
-                <span style="color:white; opacity: .3;">MOUNTAINS</span>
+                <span class="logo-bottomtext" style="color:white; opacity: .3;">MOUNTAINS</span>
             </h1>
         </div>
-        <div style=" display:flex; justify-content: center; gap: 25px;opacity: 0.3; font-size: large; color: white; font-weight: bold;">
+        <div id="footer-text" style=" display:flex; justify-content: center; gap: 25px;opacity: 0.3; font-size: large; color: white; font-weight: bold;">
             COPYRIGHT 2016. ALL RIGHTS RESERVED
         </div>
     </footer>
