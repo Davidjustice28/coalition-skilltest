@@ -115,7 +115,7 @@ li, p {
     }
 
     #history-section p {
-        font-size: smaller;
+        font-size: 2.5vh;
         font-weight: bold;
     }
 
@@ -153,20 +153,20 @@ li, p {
     }
 
     #climbtop-div p {
-        font-size: small !important;
+        font-size: 1.7vh!important;
         text-align: center;
-        padding: 10px;
+        padding: 3vh;
     }
 
     #climb-headerdiv {
         flex-direction: column;
-        margin-top: -50px;
-        margin-bottom: 20px;
+        margin-top: --2vh;
+        margin-bottom: vh;
     }
 
     #climb-headerdiv h1 {
         font-size: 7vh !important;
-        margin-bottom: -40px;
+        margin-bottom: -5vh;
     }
     
     
