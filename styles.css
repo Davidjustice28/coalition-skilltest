@@ -53,6 +53,7 @@ nav {
     width: 25%;
 }
 
+
 table {
     background-color:white;
     opacity: .8; 
@@ -74,6 +75,11 @@ table {
 
    table td {
         font-size: larger;
+   }
+
+   #climb-section p {
+    width: 50%;
+    margin-left: 10%;
    }
 }
 
@@ -117,13 +123,20 @@ li, p {
     #history-section p {
         font-size: 2.5vh;
         font-weight: bold;
+
+        padding: 10px;
+        background-color: white;
+        opacity: .6;
+        position: relative;
+        top: 15vh;
+
     }
 
     #history-header {
         position: relative;
         flex-direction: column;
         justify-content: center;
-        margin-top: -50px
+        margin-top: -50px;
     }
 
     #history-header h1 {
@@ -131,7 +144,7 @@ li, p {
     }
 
     #history-headerdiv {
-        margin-top: -120px;
+        margin-top: -110px;
         text-decoration: underline;
     }
     
