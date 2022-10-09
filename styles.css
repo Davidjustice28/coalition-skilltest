@@ -1,4 +1,3 @@
-
 html, body {
     width: 100vw;
     margin: 0;
@@ -14,7 +13,6 @@ html, body {
     border: 2px solid transparent
 }
 
-
 #history-section {
     background-image: url("./images/Bg.png");
     background-position:bottom;
@@ -23,8 +21,6 @@ html, body {
     background-size: cover;
 
 }
-
-
 
 nav {
     display: flex;
@@ -53,7 +49,6 @@ nav {
     width: 25%;
 }
 
-
 table {
     background-color:white;
     opacity: .8; 
@@ -64,25 +59,16 @@ table {
     padding-bottom: 10px;
 }
 
-@media (min-width: 500px) {
-   table {
-        width: 400px; 
-        height: 40%;
-        position: relative; 
-        left: 15vw; 
-        top: 10vh; 
-   } 
-
-   table td {
-        font-size: larger;
-   }
-
-   #climb-section p {
-    width: 50%;
-    margin-left: 10%;
-   }
+#circles {
+    display: flex;
+    gap:.5vw
 }
-
+.circle {
+    width: 1.5vh;
+    height: 1.5vh;
+    border-radius: 50%;
+    background-color: gray;
+}
 
 td, th {
     text-align: left;
@@ -96,11 +82,9 @@ li, p {
     nav {
         flex-direction: column;
     }
-    #nav-menu {
-        
+    #nav-menu {  
         font-size: small !important;
         margin-left: -60px;
-
     }
 
     #hero h1 {
@@ -112,8 +96,7 @@ li, p {
     }
    #sticky-ul  {
         margin-left: -10%;
-        font-size: 10px !important;
-        
+        font-size: 10px !important;   
     }
 
     #sticky-logo {
@@ -123,13 +106,11 @@ li, p {
     #history-section p {
         font-size: 2.5vh;
         font-weight: bold;
-
         padding: 10px;
         background-color: white;
         opacity: .6;
         position: relative;
         top: 15vh;
-
     }
 
     #history-header {
@@ -182,8 +163,6 @@ li, p {
         margin-bottom: -5vh;
     }
     
-    
-
     #climb-subdiv h2{
         font-size: 2vh !important; 
     }
@@ -193,7 +172,6 @@ li, p {
 
     #mountain-tabs {
         justify-content: center !important;
-
     }
 
     #mountain-tabs button {
@@ -221,7 +199,6 @@ li, p {
     }
 
    #footer-text {
-
         font-size: smaller !important;
         margin-bottom: 20px;
         margin-top: -10px;
@@ -229,7 +206,6 @@ li, p {
 
     .logo-toptext {
         font-size: 4.8vw !important;
-
     }
 
     .logo-bottomtext {
@@ -254,3 +230,22 @@ li, p {
         font-size: 5vw !important;
     }
 }
+
+@media (min-width: 500px) {
+    table {
+         width: 400px; 
+         height: 40%;
+         position: relative; 
+         left: 15vw; 
+         top: 10vh; 
+    } 
+ 
+    table td {
+         font-size: larger;
+    }
+ 
+    #climb-section p {
+     width: 50%;
+     margin-left: 10%;
+    }
+ }
