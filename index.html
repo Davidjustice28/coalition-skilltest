@@ -1,21 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="width: 100vw; margin: 0; height: 100vh;">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Los Angeles Mountains</title>
-    <link href="styles.css" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 </head>
-<body style="font-family: 'Oswald';font-size: 22px;">
-    <div id="hero" style="position: relative; width:100vw; height: 100vh; ">
-        <nav>
+<body style="font-family: 'Oswald';font-size: 22px; width: 100vw; margin: 0; height: 100vh;">
+    <div id="hero" style="position: relative; width:100vw; height: 100vh;border: 2px solid transparent; ">
+        <nav style="display: flex;justify-content: center;align-items: center;gap: 50%;margin-top: 10px;overflow: hidden;">
             <img  src="./images/Logo.png">
-            <ul id="nav-menu">
-                <li><i>01. HISTORY</i></li>
-                <li><i>02. TEAM</i></li>
+            <ul id="nav-menu" style="display: flex;align-items: center;list-style: none;justify-content: space-evenly;gap: 25px;">
+                <li style="text-decoration: underline;color: white;font-weight: bold;"><i>01. HISTORY</i></li>
+                <li style="text-decoration: underline;color: white;font-weight: bold;"><i>02. TEAM</i></li>
             </ul>
         </nav>
         <img id="hero-image" style="position: absolute; top:0; z-index: -1; width: 100vw; height: 100vh; object-fit: cover; object-position: top; " src="./images/hero-image.png">
@@ -24,8 +23,7 @@
             <span style="color:darkgray;font-size: 7.5vw; ">LOSANGELES</span>
             <br>
             <span style="color:#414f6b;font-size: 8vw;; position: relative;bottom:4vw;">MOUNTAINS</span>    
-        </h1>
-        
+        </h1> 
     </div>
     <div id="sticky-nav" style="height: 10vh;position: relative; width: 100vw; display: flex; justify-content: center;gap: 50%; align-items: center; font-size: small;">
         <div id="sticky-logo" style="display: flex; justify-content:center; align-items:center; gap:10px; height: 70%;">
@@ -41,7 +39,7 @@
             <li style="list-style: none; text-decoration:underline; font-weight: bold; font-size: larger;"><i>02. TEAM</i></li>
         </ul>
     </div>
-    <div id="history-section" style="display:flex; flex-direction:column; justify-content: end; position: relative;" >
+    <div id="history-section" style="display:flex; flex-direction:column; justify-content: end; position: relative; background-image: url('./images/Bg.png');background-position:bottom;width: 100vw;height: 125vh;background-size: cover;">
         <div id="history-header" style="position:absolute; display:flex; align-items: center; width: 225px; height:100px; top:7vh; left: 20vw;">
             <h1 style="font-size: 8em; color: gray;">01</h1>
             <div id= "history-headerdiv"style="display:flex; flex-direction: column; position: relative; top: 40px;">
@@ -56,16 +54,16 @@
         </p>
         <div style="width:100vw; height:25vh; background-color: #414f6b; opacity: .7;display: flex; flex-direction:column; justify-content: center; align-items: center; gap: 1vh;">
             <div id="carousel" style="width: 50vw; height:70%; display: flex; justify-content: center; gap: 10px;">
-                <img id="img1">
-                <img id="img2">
-                <img id="img3">
-                <img id="img4">
+                <img id="img1" style="width: 25%;">
+                <img id="img2" style="width: 25%;">
+                <img id="img3" style="width: 25%;">
+                <img id="img4" style="width: 25%;">
             </div>
-            <div id="circles">
-                <div class = "circle"></div>
-                <div class = "circle"></div>
-                <div class = "circle"></div>
-                <div class = "circle"></div>
+            <div id="circles" style="display: flex;gap:.5vw">
+                <div class = "circle" style=" width: 1.5vh;height: 1.5vh;border-radius: 50%;background-color: gray;"></div>
+                <div class = "circle" style=" width: 1.5vh;height: 1.5vh;border-radius: 50%;background-color: gray;"></div>
+                <div class = "circle" style=" width: 1.5vh;height: 1.5vh;border-radius: 50%;background-color: gray;"></div>
+                <div class = "circle" style=" width: 1.5vh;height: 1.5vh;border-radius: 50%;background-color: gray;"></div>
             </div>
         </div>
     </div>
@@ -78,35 +76,32 @@
                     <div style="width: 2vh; height:2vh; background-color:gray;"></div>
                 </div>
             </div>
-            <p style="font-family: Lato; font-size:3vh;">Cras scelerisque id quam sed dignissim Pellentesque urna nunc, gravida quis hendrerit
-                
-                 ac, tristique ut quam. Vivamus suscipit dignissim tortor nec congue. 
-            </p>
+            <p style="font-family: Lato; font-size:3vh;">Cras scelerisque id quam sed dignissim Pellentesque urna nunc, gravida quis hendreritac, tristique ut quam. Vivamus suscipit dignissim tortor nec congue.</p>
         </div>
         <div id="mountain-tabs" style="height: 4vh; background-color: #414f6b; display: flex; align-items: center; justify-content: flex-start;" >
-            <button style=" margin-left:10%; text-decoration: underline; height:100%; width: 10%; font-weight:bold; background-color:  gray; color: #414f6b; font-size: large;">MOUNTAIN1</button>
-            <button style="height:100%;width:10%;background-color: transparent; color: gray; font-size: large; font-weight: bold;">MOUNTAIN2</button>
+            <button id="mountain-1"style=" margin-left:10%; text-decoration: underline; height:100%; font-weight:bold; background-color:  gray; color: #414f6b; font-size: 2.5vh;">MOUNTAIN1</button>
+            <button id="mountain-2"style="height:100%;background-color: transparent; color: gray; font-size: 2.5vh; font-weight: bold;">MOUNTAIN2</button>
         </div>
         <div id ="climb-bottomdiv" style="width: 100vw; height:61vh; background-image: url('./images/bird-mountain.png'); background-position:bottom; background-size:cover;">
-            <table>
+            <table style="background-color:white;opacity: .8; text-align: center; padding-left:25px ;padding-right: 25px; padding-top: 10px; padding-bottom: 10px;">
                 <tr>
-                    <th style="font-size: 2em;" colspan="2">SCHEDULE</th>
+                    <th style="font-size: 2em; text-align: left;" colspan="2">SCHEDULE</th>
                 </tr>
                 <tr>
-                    <td>25 NOV 2016</td>
-                    <td>Vestibulum Viverra</td>
+                    <td style="text-align: left;">25 NOV 2016</td>
+                    <td style="text-align: left;">Vestibulum Viverra</td>
                 </tr>
                 <tr>
-                    <td style="padding-bottom: 1em;">28 NOV 2016</td>
-                    <td style="padding-bottom: 1em;">Vestibulum viverra</td>
+                    <td style="padding-bottom: 1em; text-align: left;">28 NOV 2016</td>
+                    <td style="padding-bottom: 1em; text-align: left;">Vestibulum viverra</td>
                 </tr>
                 <tr>
-                    <td style="padding-bottom: 1em;">18 DEC 2016</td>
-                    <td style="padding-bottom: 1em;">Vestibulum viverra</td>
+                    <td style="padding-bottom: 1em; text-align: left;">18 DEC 2016</td>
+                    <td style="padding-bottom: 1em; text-align: left;">Vestibulum viverra</td>
                 </tr>
                 <tr>
-                    <td>7 JAN 2017</td>
-                    <td>Vestibulum viverra</td>
+                    <td style="text-align: left;">7 JAN 2017</td>
+                    <td style="text-align: left;">Vestibulum viverra</td>
                 </tr>
             </table>
         </div>
@@ -124,6 +119,253 @@
             COPYRIGHT 2016. ALL RIGHTS RESERVED
         </div>
     </footer>
-    <script src="script.js"></script>
+    <style>
+        li, p {
+                font-family: Lato;
+        }
+
+        @media (max-width:500px) {
+            nav {
+                flex-direction: column;
+            }
+
+            #nav-menu {  
+                font-size: small !important;
+                margin-left: -60px;
+            }
+
+            #hero h1 {
+                position: relative;
+                top: 18%;
+                width: 50%;
+                height: 50vw;
+                padding-top: 4vw;
+            }
+
+            #sticky-ul  {
+                margin-left: -10%;
+                font-size: 10px !important;   
+            }
+
+            #sticky-logo {
+                display: none !important;
+            }
+
+            #history-section p {
+                font-size: 2.5vh;
+                font-weight: bold;
+                padding: 10px;
+                background-color: white;
+                opacity: .6;
+                position: relative;
+                top: 15vh;
+            }
+
+            #history-header {
+                position: relative;
+                flex-direction: column;
+                justify-content: center;
+                margin-top: -50px;
+            }
+
+            #history-header h1 {
+                font-size: 20vw !important;
+            }
+
+            #history-headerdiv {
+                margin-top: -110px;
+                text-decoration: underline;
+            }
+    
+            #history-headerdiv div {
+                display: none;
+            }
+
+            #carousel img:nth-child(3), #carousel img:nth-child(4){
+                border: 2px solid red;
+                display: none;
+            }
+
+            #carousel img {
+                width: 70%;
+            }
+
+            #climbtop-div {
+                flex-direction: column;
+            }
+
+            #climbtop-div p {
+                font-size: 1.7vh!important;
+                text-align: center;
+                padding: 3vh;
+            }
+
+            #climb-headerdiv {
+                flex-direction: column;
+                margin-top: --2vh;
+                margin-bottom: vh;
+            }
+
+            #climb-headerdiv h1 {
+                font-size: 7vh !important;
+                margin-bottom: -5vh;
+            }
+    
+            #climb-subdiv h2{
+                font-size: 2vh !important; 
+            }
+
+            #climb-subdiv div {
+                display: none;
+            }
+
+            #mountain-tabs {
+                justify-content: center !important;
+            }
+
+            #mountain-tabs button {
+                width: 50vw !important;
+            }
+   
+            #mountain-tabs button:nth-child(1) {
+                margin-left: 0% !important;
+            }
+
+            #climb-bottomdiv {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            table {
+                width: 70%;
+                height: 30%;
+            }
+
+            table td {
+                font-size: small;
+                font-weight: bolder;
+            }
+
+            #footer-text {
+                font-size: smaller !important;
+                margin-bottom: 20px;
+                margin-top: -10px;
+            }
+
+            .logo-toptext {
+                font-size: 4.8vw !important;
+            }
+
+            .logo-bottomtext {
+                font-size: 5vw !important;
+            }
+
+            footer {
+                flex-direction: column;
+                gap: 0% !important;
+            }
+
+            footer h1 {
+                display: flex;
+                gap: 2px;
+            }
+
+            footer img {
+                display: none;
+            }
+
+            footer .logo-toptext {
+                font-size: 5vw !important;
+            }
+        }
+
+        @media (min-width: 500px) {
+            table {
+                width: 400px; 
+                height: 40%;
+                position: relative; 
+                left: 15vw; 
+                top: 10vh; 
+            } 
+ 
+            table td {
+                font-size: larger;
+            }
+ 
+            #climb-section p {
+                width: 50%;
+                margin-left: 10%;
+            }
+        }
+    </style>
+    <script>
+        // this section changes the images for the carousel and circle identifiers every 3 seconds
+        const photos = ['./images/man-cliff.png', './images/foggy-mountain.png','./images/man-cliff.png','./images/foggy-mountain.png']
+        let index = 0;
+
+        const image1 = document.getElementById('img1')
+        const image2 = document.getElementById('img2')
+        const image3 = document.getElementById('img3')
+        const image4 = document.getElementById('img4')
+
+        const imageTags = [image1,image2,image3,image4]
+        const circles = document.getElementsByClassName('circle')
+        const array = [...circles]
+
+        function changeColor(i) {
+            array.forEach(element => {
+                if(element == i) {
+                    element.style.backgroundColor = 'white'
+                }else {
+                    element.style.backgroundColor = 'gray'
+                }
+            });
+        }
+
+        setInterval(() => {
+            if(index < 3) {
+                index += 1
+            }else {
+                index = 0
+            }
+
+            if(index == 0) {
+                image1.src = photos[index]
+                image2.src = photos[index + 1]
+                image3.src = photos[index + 2]
+                image4.src = photos[index + 3]
+            }else if(index == 1) {
+                image1.src = photos[index]
+                image2.src = photos[2]
+                image3.src = photos[3]
+                image4.src = photos[0]  
+            }else if(index == 2) {
+                image1.src = photos[index]
+                image2.src = photos[3]
+                image3.src = photos[0]
+                image4.src = photos[1]  
+            }else {
+                image1.src = photos[index]
+                image2.src = photos[0]
+                image3.src = photos[1]
+                image4.src = photos[2] 
+            }
+            changeColor(circles[index])
+        }, 3000) 
+
+        const mountainButton1 = document.getElementById("mountain-1")
+        const mountainButton2 = document.getElementById("mountain-2")
+        mountainButton2.addEventListener('click', () => {
+            document.getElementById("climb-bottomdiv").style.backgroundImage = `url('./images/mountain2.png')`
+            mountainButton1.style.textDecoration = "none"
+            mountainButton2.style.textDecoration = "underline"
+        })
+        mountainButton1.addEventListener('click', () => {
+            document.getElementById("climb-bottomdiv").style.backgroundImage = `url('./images/bird-mountain.png')`
+            mountainButton2.style.textDecoration = "none"
+            mountainButton1.style.textDecoration = "underline"
+        })  
+    </script>
 </body>
 </html>
