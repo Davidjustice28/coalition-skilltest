@@ -21,6 +21,7 @@ html, body {
     background-size: cover;
 }
 
+
 nav {
     display: flex;
     justify-content: center;
@@ -248,3 +249,5 @@ li, p {
      margin-left: 10%;
     }
  }
+
+ 

@@ -47,7 +47,7 @@
                 <div style="width: 20px; height:20px; background-color:gray;"></div>
             </div>
         </div>
-        <p style="width: 50%; position: relative; margin-bottom: 33%;margin-left: auto; margin-right: auto;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin in ante viverra, rutrum erat
+        <p style="width: 50%; margin-left: auto; margin-right: auto;position:relative; margin-bottom: 33%;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin in ante viverra, rutrum erat
          rutrum, consectetur mi. Proin at maximus est. Nullam purus ex, iaculis sed erat sed, blandit 
          tincidunt quam. Cras scelerisque id quam sed dignissim Pellentesque urna nunc, gravida quis 
          hendrerit ac, tristique ut quam. Vivamus suscipit dignissim tortor nec congue.
@@ -297,6 +297,10 @@
                 width: 50%;
                 margin-left: 10%;
             }
+
+            #history-section p {
+                top: 15vh;
+            }
         }
     </style>
     <script>
@@ -366,6 +370,8 @@
             mountainButton2.style.textDecoration = "none"
             mountainButton1.style.textDecoration = "underline"
         })  
+
+        console.log(window.innerHeight)
     </script>
 </body>
 </html>
